@@ -79,6 +79,36 @@ New JavaScript features generally go through five numbered stages:
 | Stage 3 | Candidate | Ready for implementation feedback and final review |
 | Stage 4 | Finished | Ready for inclusion in the ECMAScript standard |
 
+### 6. JavaScript Compatibility and Babel
+
+**Backward Compatibility:**
+Newer JavaScript engines generally support older JavaScript features, allowing older code to continue working in newer browsers.
+
+**Forward Compatibility:**
+Older browsers may not understand newer JavaScript features introduced after their release.
+
+**What is Babel?**
+
+Babel is a JavaScript transpiler that converts modern JavaScript syntax into older JavaScript syntax so that older browsers can understand it.
+
+Example:
+
+```javascript
+// Modern JavaScript
+const greet = (name) => `Hello, ${name}`;
+```
+
+Babel can transform it into:
+
+```javascript
+// Older JavaScript syntax
+var greet = function(name) {
+    return "Hello, " + name;
+};
+```
+
+**Note:** Some newer JavaScript features, especially built-in APIs, may require polyfills because Babel's syntax transformation alone cannot provide them.
+
 ### Quick Revision
 
 - JavaScript was created by Brendan Eich in 1995.
