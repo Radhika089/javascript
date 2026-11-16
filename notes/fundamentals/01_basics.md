@@ -109,6 +109,87 @@ var greet = function(name) {
 
 **Note:** Some newer JavaScript features, especially built-in APIs, may require polyfills because Babel's syntax transformation alone cannot provide them.
 
+## 7. Your First JavaScript Program (Hello World)
+
+JavaScript code can be executed in different environments:
+
+- **Browser Console:** Run JavaScript directly in the browser's Developer Tools.
+- **HTML File:** Add JavaScript to an HTML page using the `<script>` tag.
+- **Node.js:** Execute JavaScript outside the browser.
+
+**Our first JavaScript program:**
+
+```javascript
+console.log("Hello World");
+```
+
+**Explanation:**
+- `console` is an object.
+- `log()` is a method used to display output in the console.
+- `"Hello World"` is a string.
+- `;` is a semicolon used to terminate a statement.
+
+**Output:**
+```text
+Hello World
+```
+
+**Note:** `console.log()` is commonly used for debugging and checking values during development.
+
+## 8. JavaScript Comments
+
+Comments are used to explain code or provide additional information. They are ignored by the JavaScript engine and are not executed.
+
+**1. Single-line Comments**
+
+Use `//` to write a single-line comment.
+
+```javascript
+// This is a single-line comment
+console.log("Hello World");
+```
+
+**2. Multi-line Comments**
+
+Use `/* */` to write comments across multiple lines.
+
+```javascript
+/*
+This is a multi-line comment.
+It can span multiple lines.
+*/
+console.log("Hello World");
+```
+
+**Why do we use comments?**
+- To explain code.
+- To improve code readability.
+- To make code easier to understand and maintain.
+- To temporarily disable a line of code while debugging.
+
+## 9. What are variables?
+Variables are used to store the data or any information. 
+later we can use them and even change them according to our use.
+
+this is how we declare it 
+```javascript 
+var firstName = "Hii"; // Hii
+```
+
+how we use it 
+```javascript 
+console.log(firstName);
+```
+
+we can change the value
+```javascript 
+firstName = "Hii world"; // Hii World
+```
+
+*** Use strict is widely used in js for strict version
+
+## Rules for Naming Variables
+
 ### Quick Revision
 
 - JavaScript was created by Brendan Eich in 1995.
